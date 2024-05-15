@@ -1,0 +1,115 @@
+.hero-section {
+    margin-top: 69px;
+    margin-bottom: 187px;
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+
+        .hero__title {
+            max-width: 635px;
+
+            h1 {
+                display: flex;
+                flex-wrap: wrap;
+                font-family: Lalezar;
+                font-size: 96px;
+                font-weight: 400;
+                line-height: 110.43px;
+                color: #FF0000;
+
+                span {
+                    margin-bottom: 14px;
+                    font-family: Lilita One;
+                    font-size: 64px;
+                    font-weight: 400;
+                    line-height: 73.15px;
+                    color: black;
+                }
+            }
+
+            button {
+                margin-top: 12px;
+                width: 163px;
+                height: 50px;
+                padding-top: 4px;
+                text-align: center;
+                background: #FF0000;
+                border-radius: 20px;
+                font-family: Lalezar;
+                color: white;
+                font-size: 20px;
+                line-height: 37.61px;
+                transition: .2s;
+                &:active {
+                    scale: .98;
+                    opacity: .93;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1208px) {
+    .hero-section {
+        &__content {
+            img {
+                order: -1;
+            }
+            .hero__title {
+                max-width: 1300px !important;
+                h1 {
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 667px) {
+    .hero-section {
+        &__content {
+            img {
+                width: 100%;
+            }
+            .hero__title {
+                margin-top: 40px;
+                max-width: 1300px !important;
+                h1 {
+                    font-size: 54px;
+                    line-height: 60px;
+                    span {
+                        margin-bottom: 28px;
+                        font-size: 42px;
+                        line-height: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .hero-section {
+        &__content {
+            .hero__title {
+                h1 {
+                    font-size: 46px;
+                    line-height: 48px;
+                    span {
+                        margin-bottom: 20px;
+                        font-size: 38px;
+                        line-height: 0px;
+                    }
+                }
+                button {
+                    width: 123px;
+                    height: 40px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

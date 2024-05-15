@@ -1,0 +1,80 @@
+.products-section {
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        margin-bottom: 151px;
+
+        .products__card {
+            width: 303px;
+
+            &:hover {
+                .products__card-img {
+                    img {
+                        scale: 1.02;
+                    }
+                }
+            }
+
+            .products__card-img {
+                width: 303px;
+                height: 421px;
+                border-radius: 10px;
+                background: #EDF2F4;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 15px;
+                position: relative;
+                
+                img {
+                    cursor: pointer;
+                    transition: .2s;
+                    width: 260px;
+                    height: 380px;
+                    object-fit: contain;
+                }
+            }
+
+            h3 {
+                font-family: Inter;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 16.94px;
+                letter-spacing: 0.05em;
+                font-weight: 600;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 1;
+                overflow: hidden;
+                margin-bottom: 6px;
+            }
+
+            p {
+                font-family: Inter;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16.94px;
+                letter-spacing: 0.05em;
+
+            }
+            button {
+                position: absolute;
+                z-index: 9;
+                top: 16px;
+                left: 16px
+            }
+            svg {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1316px) {
+    .products-section {
+        &__content {
+            justify-content: center;
+        }
+    }
+}

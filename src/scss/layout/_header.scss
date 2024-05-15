@@ -1,0 +1,147 @@
+@use '../abstracts' as *;
+
+header {
+    padding: 22px 0;
+
+    .header__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 64px;
+
+            a {
+                font-family: Inter;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19.36px;
+
+                sup {
+                    background: #FF0000;
+                    color: white;
+                    border-radius: 50%;
+                    padding: 2px 6px;
+                    font-size: 12px;
+                    font-weight: 600;
+                    width: 20px;
+                    height: 20px;
+                }
+
+            }
+
+            a.active {
+                color: #FF0000;
+            }
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            gap: 23px;
+
+            a {
+                font-family: Inter;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19.36px;
+
+            }
+
+            label {
+                position: relative;
+
+                input {
+                    width: 195px;
+                    padding: 8px 12px;
+                    padding-right: 48px;
+                    border-radius: 10px;
+                    border: 0;
+                    background: #EDF2F4;
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 16.94px;
+
+                }
+
+                svg {
+                    position: absolute;
+                    right: 20px;
+                    top: 7px;
+                }
+            }
+        }
+
+        .menu-btn {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            span {
+                border-radius: 4px;
+                width: 23px;
+                height: 3px;
+                background: #3D3D3D;
+            }
+        }
+    }
+}
+
+@media (max-width: 808px) {
+    header {
+        .header__content {
+            flex-wrap: wrap;
+            ul {
+                z-index: 10;
+                padding: 24px;
+                position: absolute;
+                top: 96px;
+                left: 0;    
+                width: 100%;
+                background: white;
+                box-shadow: 0 3px 5px #0002;
+                flex-direction: column;
+                gap: 20px !important;
+                justify-content: center;
+                align-items: center;
+                transition: .3s ease;
+                transform-origin: top;
+                transform: scaleY(0);
+            }
+            ul.show {
+                transform: scaleY(1);
+            }
+
+            div {
+                order: 1;
+                a {
+                    display: none;
+                }
+
+                input {
+                    width: 510px;
+                }
+            }
+
+            .menu-btn {
+                display: flex;
+                padding-right: 26px;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    header {
+        .header__content {
+
+            input {
+                width: 100% !important;
+            }
+            
+        }
+    }
+}
