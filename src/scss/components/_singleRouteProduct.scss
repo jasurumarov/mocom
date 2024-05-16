@@ -1,4 +1,5 @@
 .single-product {
+    margin: 100px 0;
     .container {
         max-width: 1484px;
         padding: 0 16px;
@@ -70,7 +71,6 @@
                     border-radius: 5px;
                     background: #FDE0E9;
                     color: #F74B81;
-                    font-family: Quicksand;
                     font-size: 14px;
                     font-weight: 700;
                     line-height: 14px;
@@ -78,7 +78,6 @@
                 h3 {
                     margin-bottom: 10px;
                     max-width: 445px;
-                    font-family: Quicksand;
                     font-size: 40px;
                     font-weight: 700;
                     line-height: 48px;
@@ -102,7 +101,6 @@
                         color: #B6B6B6;
                     }
                     p {
-                        font-family: Lato;
                         font-size: 14px;
                         font-weight: 400;
                         line-height: 24px;
@@ -115,7 +113,6 @@
                     align-items: center;
                     gap: 14px;
                     h4 {
-                        font-family: Quicksand;
                         font-size: 58px;
                         font-weight: 700;
                         line-height: 58px;
@@ -126,14 +123,12 @@
                         flex-direction: column;
                         gap: 6px;
                         p {
-                            font-family: Quicksand;
                             font-size: 12px;
                             font-weight: 600;
                             line-height: 12px;
                             color: #FDC040;
                         }
                         h5 {
-                            font-family: Quicksand;
                             font-size: 28px;
                             font-weight: 700;
                             line-height: 28px;
@@ -144,7 +139,6 @@
                 }
                 .product__right-desc {
                     max-width: 466px;
-                    font-family: Lato;
                     font-size: 17px;
                     font-weight: 400;
                     line-height: 24px;
@@ -158,7 +152,6 @@
                     align-items: center;
                     gap: 10px;
                     span {
-                        font-family: Lato;
                         font-size: 14px;
                         font-weight: 600;
                         line-height: 24px;
@@ -171,7 +164,6 @@
                         button {
                             padding: 7px 8.66px 8px 9px;
                             border-radius: 5px;
-                            font-family: Lato;
                             font-size: 14px;
                             font-weight: 400;
                             text-align: center;
@@ -201,7 +193,6 @@
                         gap: 22px;
                         p {
                             user-select: none;
-                            font-family: Lato;
                             font-size: 16px;
                             font-weight: 400;
                             line-height: 24px;
@@ -240,7 +231,6 @@
                             color: white;
                         }
                         p {
-                            font-family: Quicksand;
                             font-size: 16px;
                             font-weight: 700;
                             line-height: 50px;
@@ -273,13 +263,11 @@
                         flex-direction: column;
                         gap: 13px;
                         li {
-                            font-family: Lato;
                             font-size: 13px;
                             font-weight: 400;
                             line-height: 24px;
                             color: #7E7E7E;
                             span {
-                                font-family: Lato;
                                 font-size: 13px;
                                 font-weight: 400;
                                 line-height: 24px;
