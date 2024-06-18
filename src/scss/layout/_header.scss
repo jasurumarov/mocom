@@ -1,6 +1,10 @@
 @use '../abstracts' as *;
 
 header {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 11;
     padding: 22px 0;
 
     .header__content {
